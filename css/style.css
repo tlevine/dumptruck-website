@@ -222,7 +222,7 @@ h1 { font-size: 3.5em; }
 #main {font-family: 'Muli', sans-serif; }
 header > img { width: 100%; margin-top: 2em; }
 .center {
-  padding-left: 20px; /* The text is heavier on the left. */
+  padding-left: 30px; padding-right: 10px; /* The text is heavier on the left. */
   width: 300px;
   margin: auto; display: block;
 }
