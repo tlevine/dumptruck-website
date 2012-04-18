@@ -33,35 +33,44 @@
   <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-
+  <header class="center">
+    <img src="img/banner.png">
+    <h1>DumpTruck</h1>
   </header>
-  <div role="main">
-
+  <div role="main" id="main" class="center">
+    <p>
+      DumpTruck is a relaxing way to use
+      <a href="https://sqlite.org">SQLite</a> from
+      <a href="https://python.org">Python</a>.
+    </p>
+    <h2>Install</h2>
+    <pre>pip install dumptruck</pre>
+    <h2>Use</h2>
+    <pre>dt = DumpTruck()
+dt.insert({"payload": "10 tons"})
+data = dt.dump()
+</pre>
+    <h2>More</h2>
+    Read the docs at
+    <a href="https://github.com/tlevine/dumptruck">GitHub</a>.
   </div>
   <footer>
 
   </footer>
 
-
   <!-- JavaScript at the bottom for fast page loading -->
+  <!-- Piwik --> 
+  <script type="text/javascript">
+  var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.thomaslevine.com/" : "http://piwik.thomaslevine.com/");
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script><script type="text/javascript">
+  try {
+  var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 5);
+  piwikTracker.trackPageView();
+  piwikTracker.enableLinkTracking();
+  } catch( err ) {}
+  </script><noscript><p><img src="http://piwik.thomaslevine.com/piwik.php?idsite=5" style="border:0" alt="" /></p></noscript>
+  <!-- End Piwik Tracking Code -->
 
-  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <!-- scripts concatenated and minified via build script -->
-  <script src="js/plugins.js"></script>
-  <script src="js/script.js"></script>
-  <!-- end scripts -->
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
