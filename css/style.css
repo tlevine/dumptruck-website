@@ -220,6 +220,7 @@ td { vertical-align: top; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Crete Round', 'Rockwell', 'Century Schoolbook', serif; }
 h1 { font-size: 3.5em; }
 #main {font-family: 'Muli', sans-serif; }
+header > img { width: 100%; margin-top: 2em; }
 .center {
   padding-left: 20px; /* The text is heavier on the left. */
   width: 300px;
